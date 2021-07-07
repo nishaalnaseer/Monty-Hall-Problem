@@ -1,10 +1,10 @@
 """a progrom to emulate and run the monty hall problem
-where contestants are given 3 doors, behind two doors is a goats and behind
-one door is a real cars. When the contestant choses a door the host tells the 
-contestant to chose again after opening a door with a goats behind.
-The host always opens the door of a goats
-this code prints out the amount of times you would get cars or goats by chosing 
-to swap or not"""
+where contestants are given 3 doors, behind two doors are goats and behind
+one door is a real car. When the contestant choses a door the host gives the 
+option for the contestant to chose again(or swap the door) after opening a door
+with a goats behind. The host always opens the door of a goat.
+this code prints out the amount of times, for the amount of times iterated,
+you would get cars or goats by chosing to swap or not"""
 
 import random
 
@@ -51,7 +51,7 @@ def swapFunc(myChoice, choices):
     2. after the host opened the door with a goats, the first goats in the list
     was removed... although it was the first goats it is still random becuase 
     the list was shuffled"""
-    
+
     myChoice = choices[0]
     return(myChoice)
 
